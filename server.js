@@ -7,6 +7,7 @@ const io = socketio(server);
 
 const {addUser,removeUser,getUser,getUsersInRoom} = require('./Users/users')
 
+app.use(express.static('client/build'));
 
 const PORT = process.env.PORT || 5000;
 // Importing routing module
@@ -53,6 +54,11 @@ io.on('connection',(socket)=>{
 
 
 app.use(router);
+
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    
+});
 
 
 
