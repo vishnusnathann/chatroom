@@ -1,0 +1,28 @@
+.messagesend-container{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-top: 1px solid rgb(213, 213, 213);
+    border-bottom: 3px solid rgb(0, 146, 220);
+}
+
+
+
+.messagesend-container input{
+    border: none;
+    flex-grow: 1;
+    padding: 5px;
+    padding-left: 10px;
+    
+}
+
+.messagesend-container input:focus{
+    outline: none;
+}
+
+.messagesend-container span{
+    color: rgb(28, 110, 211);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}

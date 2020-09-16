@@ -1,0 +1,11 @@
+@import url('https://fonts.google.com/specimen/Nunito?sidebar.open&selection.family=Archivo');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    }

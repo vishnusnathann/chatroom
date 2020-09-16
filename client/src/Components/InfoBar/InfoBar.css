@@ -1,0 +1,21 @@
+.infobar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(109, 163, 209);
+    padding: 10px;
+    background-color: rgb(0, 146, 220);
+}
+.room-name{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.close{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
