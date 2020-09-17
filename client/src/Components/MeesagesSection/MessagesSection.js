@@ -1,6 +1,12 @@
-import React from 'react';
+import React,{useEffect,useRef} from 'react';
 import './MessagesSection.css';
 function MessagesSection({messages,name}) {
+    const lastItem = useRef(null);
+    useEffect(() => {
+		lastItem.current.scrollIntoView({ behavior: 'smooth' });
+
+	}, [messages]);
+
     return (
         <div className="messages-section-container">
 
@@ -34,6 +40,10 @@ function MessagesSection({messages,name}) {
 
                 })
             }
+
+
+            <div ref={lastItem}></div>
+
             {/* <div className="message-box-wrapper left">
                 <div className="message-box">
                     <span className="user">
