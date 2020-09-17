@@ -2,9 +2,11 @@
     display: flex;
     flex-grow: 1;   
     flex-direction: column;
+
     /* flex-wrap: wrap; */
     /* overflow: hidden; */
     overflow-y: auto;
+    /* margin-bottom: 50px; */
 }
 
 
@@ -56,7 +58,7 @@
 .right .message-box{
     flex-wrap: wrap;
     background-color:  rgb(44, 134, 243);
-    color: #000000;
+    color: #ffffff;
     justify-content: left;
     flex-wrap: nowrap;
 }

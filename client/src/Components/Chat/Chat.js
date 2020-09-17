@@ -9,7 +9,7 @@ import MessagesSection from '../MeesagesSection/MessagesSection';
 let socket;
 function Chat(props) {
 
-    const ENDPOINT = 'http://localhost:5000';
+    const ENDPOINT = '/';
     // Context 
     const context = useContext(Context);
     // message state to store message

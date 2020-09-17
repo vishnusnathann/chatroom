@@ -47,15 +47,15 @@ io.on('connection',(socket)=>{
     socket.on('disconnect',()=>{
         const user = removeUser(socket.id);
         if(user){
-            io.to(user.room).emit('message',{user:'admin',text:`${user} has left.`})
+            io.to(user.room).emit('message',{user:'admin',text:`${user.name} has left.`})
         }
     })
 })
 
 
-app.use(router);
+// app.use(router);
 
-app.get('/', (req, res) => {
+app.get('/**', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     
 });

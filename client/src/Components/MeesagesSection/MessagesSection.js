@@ -15,7 +15,7 @@ function MessagesSection({messages,name}) {
 
                     return(
 
-                        (item.user != name)?
+                        (item.user.trim().toLowerCase() != name.trim().toLowerCase())?
                         <div className="message-box-wrapper left" key={index}>
                             <div className="message-box">
                                 <span className="user">

@@ -4,6 +4,7 @@
     height: 50px;
     border-top: 1px solid rgb(213, 213, 213);
     border-bottom: 3px solid rgb(0, 146, 220);
+
 }
 
 
@@ -23,6 +24,7 @@
 .messagesend-container span{
     color: rgb(28, 110, 211);
     font-size: 30px;
+    padding-right: 5px;
     display: flex;
     align-items: center;
 }
